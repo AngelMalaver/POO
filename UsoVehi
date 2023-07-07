@@ -1,0 +1,107 @@
+package claselaboratorio2;
+
+public class UsoVehiculo {
+
+	public static void main(String[] args) {
+				
+	    Vehiculo coche1 = new Vehiculo();
+	    
+	    Vehiculo coche2 = new Vehiculo();
+	    
+	    Vehiculo coche3 = new Vehiculo();
+	    
+	    Vehiculo coche4 = new Vehiculo();
+	    
+	    Vehiculo coche5 = new Vehiculo();
+	    
+	    Vehiculo coche6 = new Vehiculo();
+				
+		coche1.estableceColor("Rojo");
+		
+		coche2.estableceColor("Negro");
+		
+		coche3.estableceColor("Azul");
+		
+		coche4.estableceColor("Amarillo");
+		
+		coche5.estableceColor("Verde");
+		
+		coche6.estableceColor("Morado");
+				
+		Furgonetica furgoneta1 = new Furgonetica(7, 580);
+		
+		Furgonetica furgoneta2 = new Furgonetica(8, 600);
+		
+		Furgonetica furgoneta3 = new Furgonetica(2, 1000);
+		
+		Furgonetica furgoneta4 = new Furgonetica(4, 1500);
+		
+		Furgonetica furgoneta5 = new Furgonetica(10, 200);
+		
+		Furgonetica furgoneta6 = new Furgonetica(6, 2000);
+				
+		furgoneta1.estableceColor("Azul");
+				
+		furgoneta1.configuraAsientos("Si");
+				
+		furgoneta1.configuraClimatizador("Si");
+		
+		furgoneta2.estableceColor("Morado");
+		
+		furgoneta2.configuraAsientos("Si");
+				
+		furgoneta2.configuraClimatizador("no");
+		
+		furgoneta3.estableceColor("Plateado");
+		
+		furgoneta3.configuraAsientos("no");
+				
+		furgoneta3.configuraClimatizador("no");
+		
+		furgoneta4.estableceColor("Verde");
+		
+		furgoneta4.configuraAsientos("Si");
+				
+		furgoneta4.configuraClimatizador("Si");
+		
+		furgoneta5.estableceColor("Negro");
+		
+		furgoneta5.configuraAsientos("Si");
+				
+		furgoneta5.configuraClimatizador("No");
+		
+		furgoneta6.estableceColor("Rosado");
+		
+		furgoneta6.configuraAsientos("Si");
+				
+		furgoneta6.configuraClimatizador("Si");
+				
+		System.out.println(coche1.dimeDatosGenerales() 
+						+" "+ coche1.dimeColor());
+		
+		System.out.println(coche2.dimeDatosGenerales() 
+				+" "+ coche2.dimeColor());
+		
+		System.out.println(coche3.dimeDatosGenerales() 
+				+" "+ coche3.dimeColor());
+		
+		System.out.println(coche4.dimeDatosGenerales() 
+				+" "+ coche4.dimeColor());
+		
+		System.out.println(coche5.dimeDatosGenerales() 
+				+" "+ coche5.dimeColor());
+		
+		System.out.println(coche6.dimeDatosGenerales() 
+				+" "+ coche6.dimeColor());
+		
+        System.out.println(furgoneta1.dimeDatosGenerales()+" "+furgoneta1.dimeDatosFurgonetaGeneral()+" "+furgoneta1.dimeDatosFurgoneta());
+       
+        System.out.println(furgoneta2.dimeDatosGenerales()+" "+furgoneta2.dimeDatosFurgonetaGeneral()+" "+furgoneta2.dimeDatosFurgoneta());
+        
+        System.out.println(furgoneta3.dimeDatosGenerales()+" "+furgoneta3.dimeDatosFurgonetaGeneral()+" "+furgoneta3.dimeDatosFurgoneta());
+        
+        System.out.println(furgoneta4.dimeDatosGenerales()+" "+furgoneta4.dimeDatosFurgonetaGeneral()+" "+furgoneta4.dimeDatosFurgoneta());
+        
+        System.out.println(furgoneta5.dimeDatosGenerales()+" "+furgoneta5.dimeDatosFurgonetaGeneral()+" "+furgoneta5.dimeDatosFurgoneta());
+        
+        System.out.println(furgoneta6.dimeDatosGenerales()+" "+furgoneta6.dimeDatosFurgonetaGeneral()+" "+furgoneta6.dime
