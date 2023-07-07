@@ -1,0 +1,20 @@
+private int capacidadCarga; 
+private int plazasExtras; 
+
+public Furgonetica(int plazasExtras, int capacidadCarga) {
+    
+    super();
+    this.capacidadCarga = capacidadCarga; 
+    this.plazasExtras = plazasExtras; 
+}
+
+public String obtenerDatosFurgoneta() {
+    return "La capacidad de carga es: "+ capacidadCarga +
+            " kg y las plazas extras son "+ plazasExtras;
+}
+
+public String obtenerDatosGeneralesFurgoneta() {
+    
+    return ", los datos generales son: Color: "+super.obtenerColor()+", tipo de asientos: "+super.obtenerTipoAsientos()+" y climatizador: "+super.obtenerClimatizador()+", "; 
+    
+}
