@@ -1,63 +1,63 @@
 package claselaboratorio2;
 
-public class Automovil {
+public class vehiculo {
 	
-	private int cantidadRuedas;  
-	private int largo; 
+	private int ruedas;  
+	private int largo ; 
 	private int ancho; 
-	private int motor; 
-	private int pesoPlataforma; 
+	private int motor ; 
+	private int peso_plataforma ; 
 	
-	private String color; 
-	private int pesoTotal; 
-	private boolean asientosCuero, climatizador; 
+	private  String color; 
+	private int peso_total; 
+	private boolean asientos_cuero, climatizador; 
 	
 	
-	public Automovil() {
-		cantidadRuedas = 4; 
+	public vehiculo() {
+		ruedas = 4; 
 		largo = 2000; 
 		ancho = 300; 
 		motor = 1600; 
-		pesoPlataforma = 500; 
+		peso_plataforma = 500; 
 		
 	}
 	
-	public String obtenerDatosGenerales() { //GETTER
+	public String dime_datos_generales() { //GETTER
 		
-		return "La plataforma del automovil tiene "+ cantidadRuedas+" ruedas"+ 
+		return "La pataforma del vehiculo tiene "+ ruedas+" ruedas"+ 
 		", Mide "+ largo/1000 +" metros con un ancho de "+ ancho+
-		" cm, un motor de "+motor+" Cc y un peso de plataforma de "+ pesoPlataforma+ " kg"; 
+		" cm, un motor de "+motor+" Cc y un peso de plataforma de "+ peso_plataforma+ " kg"; 
 	}
 	
-	public void establecerColor (String colorAutomovil) { //SETTER
+	public void establece_color (String color_vehiculo) { //SETTER
 		
-		color = colorAutomovil; 
+		color = color_vehiculo; 
 		
 	}
 	
-	public String obtenerColor() { //Getter
-		return "El color del automovil es "+ color; 
+	public String dimeColor() { //Getter
+		return "el color del vehiculo es "+ color; 
 	}
 	
-	public void configurarAsientos(String asientosCuero) {//SETTER
+	public void configura_asientos(String asientos_cuero) {//SETTER
 		
-		if (asientosCuero.equalsIgnoreCase("si")) {
-			this.asientosCuero = true; 
+		if (asientos_cuero.equalsIgnoreCase("si")) {
+			this.asientos_cuero = true; 
 		}else {
-			this.asientosCuero = false; 
+			this.asientos_cuero = false; 
 		}
 	}
 	
-	public String obtenerAsientos() { //GETTER
+	public String dime_asientos() { //GETTER
 		
-		if(asientosCuero==true) {
-			return "El automovil tiene asientos de cuero"; 
+		if(asientos_cuero==true) {
+			return "el vehiculo tiene asientos de cuero"; 
 		}else {
-			return "El automovil tiene asientos de serie"; 
+			return "el vehiculo tiene asientos de serie"; 
 		}
 	}
 	
-	public void configurarClimatizador(String climatizador) {//SETTER
+	public void configura_climatizador(String climatizador) {//SETTER
 		
 		if(climatizador.equalsIgnoreCase("si")) {
 			this.climatizador =true; 
@@ -66,44 +66,44 @@ public class Automovil {
 		}
 	}
 	
-	public String obtenerClimatizador() {//GETTER
+	public String dime_climatizador() {//GETTER
 		if(climatizador ==true){
-			return "El automovil incorpora climatizador"; 
+			return "el coche incorpora climatizador"; 
 		}else {
-			return "El automovil lleva aire acondicionado"; 
+			return "el coche lleva aire acondicionado"; 
 		}
 	}
 	
 	
-	public String obtenerPesoAutomovil() {//SETTER Y GETTER 
+	public String dime_peso_vehiculo() {//SETTER Y GETTER 
 		
-		int pesoCarroceria =500; 
+		int peso_carroceria =500; 
 		
-		pesoTotal = pesoPlataforma+pesoCarroceria; 
+		peso_total = peso_plataforma+peso_carroceria; 
 		
-		if(asientosCuero ==true) {
-			pesoTotal= pesoTotal+50; 
+		if(asientos_cuero ==true) {
+			peso_total= peso_total+50; 
 		}
 		
 		if(climatizador==true) {
-			pesoTotal= pesoTotal+20; 
+			peso_total= peso_total+20; 
 		}
 		
-		return "El peso del automovil es: "+ pesoTotal; 
+		return "el peso del vehiculo es: "+ peso_total; 
 	}
 	
-	 public int obtenerPrecioAutomovil() { //GETTER
+	 public int precio_vehiculo() { //GETTER
 		
-		 int precioFinal = 10000; 
+		 int preciofinal = 10000; 
 		 
-		 if(asientosCuero==true) {
-			 precioFinal+=2000; 
+		 if(asientos_cuero==true) {
+			 preciofinal+=2000; 
 		 }
 		 if(climatizador==true) {
-			 precioFinal+=1500; 
+			 preciofinal+=1500; 
 		 }
 		 
-		 return precioFinal;
+		 return preciofinal;
 		 }
 
 }
