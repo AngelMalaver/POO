@@ -1,107 +1,115 @@
 package claselaboratorio2;
 
-public class UsoVehiculo {
+public class Usovehiculo {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub	
 				
-	    Vehiculo coche1 = new Vehiculo();
+	    vehiculo micoche1 = new vehiculo();
 	    
-	    Vehiculo coche2 = new Vehiculo();
+	    vehiculo micoche2 = new vehiculo();
 	    
-	    Vehiculo coche3 = new Vehiculo();
+	    vehiculo micoche3 = new vehiculo();
 	    
-	    Vehiculo coche4 = new Vehiculo();
+	    vehiculo micoche4 = new vehiculo();
 	    
-	    Vehiculo coche5 = new Vehiculo();
+	    vehiculo micoche5 = new vehiculo();
 	    
-	    Vehiculo coche6 = new Vehiculo();
+	    vehiculo micoche6 = new vehiculo();
 				
-		coche1.estableceColor("Rojo");
+		micoche1.establece_color("Rojo");
 		
-		coche2.estableceColor("Negro");
+		micoche2.establece_color("Negro");
 		
-		coche3.estableceColor("Azul");
+		micoche3.establece_color("Azul");
 		
-		coche4.estableceColor("Amarillo");
+		micoche4.establece_color("Amarillo");
 		
-		coche5.estableceColor("Verde");
+		micoche5.establece_color("Verde");
 		
-		coche6.estableceColor("Morado");
+		micoche6.establece_color("Morado");
 				
-		Furgonetica furgoneta1 = new Furgonetica(7, 580);
+		Furgonetica mifurgoneta1 = new Furgonetica(7, 580);
 		
-		Furgonetica furgoneta2 = new Furgonetica(8, 600);
+		Furgonetica mifurgoneta2 = new Furgonetica(8, 600);
 		
-		Furgonetica furgoneta3 = new Furgonetica(2, 1000);
+		Furgonetica mifurgoneta3 = new Furgonetica(2, 1000);
 		
-		Furgonetica furgoneta4 = new Furgonetica(4, 1500);
+		Furgonetica mifurgoneta4 = new Furgonetica(4, 1500);
 		
-		Furgonetica furgoneta5 = new Furgonetica(10, 200);
+		Furgonetica mifurgoneta5 = new Furgonetica(10, 200);
 		
-		Furgonetica furgoneta6 = new Furgonetica(6, 2000);
+		Furgonetica mifurgoneta6 = new Furgonetica(6, 2000);
 				
-		furgoneta1.estableceColor("Azul");
+		mifurgoneta1.establece_color("Azul");
 				
-		furgoneta1.configuraAsientos("Si");
+		mifurgoneta1.configura_asientos("Si");
 				
-		furgoneta1.configuraClimatizador("Si");
+		mifurgoneta1.configura_climatizador("Si");
 		
-		furgoneta2.estableceColor("Morado");
+		mifurgoneta2.establece_color("Morado");
 		
-		furgoneta2.configuraAsientos("Si");
+		mifurgoneta2.configura_asientos("Si");
 				
-		furgoneta2.configuraClimatizador("no");
+		mifurgoneta2.configura_climatizador("no");
 		
-		furgoneta3.estableceColor("Plateado");
+		mifurgoneta3.establece_color("Plateado");
 		
-		furgoneta3.configuraAsientos("no");
+		mifurgoneta3.configura_asientos("no");
 				
-		furgoneta3.configuraClimatizador("no");
+		mifurgoneta3.configura_climatizador("no");
 		
-		furgoneta4.estableceColor("Verde");
+		mifurgoneta4.establece_color("Verde");
 		
-		furgoneta4.configuraAsientos("Si");
+		mifurgoneta4.configura_asientos("Si");
 				
-		furgoneta4.configuraClimatizador("Si");
+		mifurgoneta4.configura_climatizador("Si");
 		
-		furgoneta5.estableceColor("Negro");
+		mifurgoneta5.establece_color("Negro");
 		
-		furgoneta5.configuraAsientos("Si");
+		mifurgoneta5.configura_asientos("Si");
 				
-		furgoneta5.configuraClimatizador("No");
+		mifurgoneta5.configura_climatizador("No");
 		
-		furgoneta6.estableceColor("Rosado");
+		mifurgoneta6.establece_color("Rosado");
 		
-		furgoneta6.configuraAsientos("Si");
+		mifurgoneta6.configura_asientos("Si");
 				
-		furgoneta6.configuraClimatizador("Si");
+		mifurgoneta6.configura_climatizador("Si");
 				
-		System.out.println(coche1.dimeDatosGenerales() 
-						+" "+ coche1.dimeColor());
+		System.out.println(micoche1.dime_datos_generales() 
+						+" "+ micoche1.dimeColor());
 		
-		System.out.println(coche2.dimeDatosGenerales() 
-				+" "+ coche2.dimeColor());
+		System.out.println(micoche2.dime_datos_generales() 
+				+" "+ micoche2.dimeColor());
 		
-		System.out.println(coche3.dimeDatosGenerales() 
-				+" "+ coche3.dimeColor());
+		System.out.println(micoche3.dime_datos_generales() 
+				+" "+ micoche3.dimeColor());
 		
-		System.out.println(coche4.dimeDatosGenerales() 
-				+" "+ coche4.dimeColor());
+		System.out.println(micoche4.dime_datos_generales() 
+				+" "+ micoche4.dimeColor());
 		
-		System.out.println(coche5.dimeDatosGenerales() 
-				+" "+ coche5.dimeColor());
+		System.out.println(micoche5.dime_datos_generales() 
+				+" "+ micoche5.dimeColor());
 		
-		System.out.println(coche6.dimeDatosGenerales() 
-				+" "+ coche6.dimeColor());
+		System.out.println(micoche6.dime_datos_generales() 
+				+" "+ micoche6.dimeColor());
 		
-        System.out.println(furgoneta1.dimeDatosGenerales()+" "+furgoneta1.dimeDatosFurgonetaGeneral()+" "+furgoneta1.dimeDatosFurgoneta());
+        System.out.println(mifurgoneta1.dime_datos_generales()+""+mifurgoneta1.dimeDatosFurgonetageneral()+" "+mifurgoneta1.dimeDatosFurgoneta());
        
-        System.out.println(furgoneta2.dimeDatosGenerales()+" "+furgoneta2.dimeDatosFurgonetaGeneral()+" "+furgoneta2.dimeDatosFurgoneta());
+        System.out.println(mifurgoneta2.dime_datos_generales()+""+mifurgoneta2.dimeDatosFurgonetageneral()+" "+mifurgoneta2.dimeDatosFurgoneta());
         
-        System.out.println(furgoneta3.dimeDatosGenerales()+" "+furgoneta3.dimeDatosFurgonetaGeneral()+" "+furgoneta3.dimeDatosFurgoneta());
+        System.out.println(mifurgoneta3.dime_datos_generales()+""+mifurgoneta3.dimeDatosFurgonetageneral()+" "+mifurgoneta3.dimeDatosFurgoneta());
         
-        System.out.println(furgoneta4.dimeDatosGenerales()+" "+furgoneta4.dimeDatosFurgonetaGeneral()+" "+furgoneta4.dimeDatosFurgoneta());
+        System.out.println(mifurgoneta4.dime_datos_generales()+""+mifurgoneta4.dimeDatosFurgonetageneral()+" "+mifurgoneta4.dimeDatosFurgoneta());
         
-        System.out.println(furgoneta5.dimeDatosGenerales()+" "+furgoneta5.dimeDatosFurgonetaGeneral()+" "+furgoneta5.dimeDatosFurgoneta());
+        System.out.println(mifurgoneta5.dime_datos_generales()+""+mifurgoneta5.dimeDatosFurgonetageneral()+" "+mifurgoneta5.dimeDatosFurgoneta());
         
-        System.out.println(furgoneta6.dimeDatosGenerales()+" "+furgoneta6.dimeDatosFurgonetaGeneral()+" "+furgoneta6.dime
+        System.out.println(mifurgoneta6.dime_datos_generales()+""+mifurgoneta6.dimeDatosFurgonetageneral()+" "+mifurgoneta6.dimeDatosFurgoneta());
+        
+		
+		
+				
+	}
+
+}
