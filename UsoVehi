@@ -107,7 +107,9 @@ public class Usovehiculo {
         
         System.out.println(mifurgoneta6.dime_datos_generales()+""+mifurgoneta6.dimeDatosFurgonetageneral()+" "+mifurgoneta6.dimeDatosFurgoneta());
         
-		
+	 System.out.println("funciona");
+
+	 System.out.println("30310383T!4444AM");
 		
 				
 	}
