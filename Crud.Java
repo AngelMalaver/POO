@@ -12,7 +12,7 @@ public class CRUD {
 		
 try {
 			
-			Connection miConexion = DriverManager.getConnection("jdbc:postgresq:
+			Connection miConexion = DriverManager.getConnection("jdbc:postgresq://localhost:5434/Soldado","postgres", "16012004");
 			System.out.println("Paso 1 conexion  completo");
 			
 		
