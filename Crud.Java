@@ -53,7 +53,7 @@ try {
 			
 			
 		}catch(Exception e ) {
-			System.out.println("Fallo");
+			System.out.println("Error");
 			System.out.println(e.getMessage()); 
 		}
 	}
